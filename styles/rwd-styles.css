@@ -1,0 +1,95 @@
+    @media screen and (max-width:1440px) {
+        .feat-container {
+            width: 90%;
+        }
+        .project-item {
+            width: calc(100%/2);
+        }
+        .team-members {
+            width: 100%;
+        }
+        .slide-content {
+            padding: 40px 80px;
+        }
+        .top-footer-container {
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width:1200px) {
+        header {
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            width: 85%;
+        }
+        .feat-container {
+            width: 100%;
+        }
+        .team-member {
+            align-items: center;
+            width: 50%;
+            padding: 40px 6em;
+            text-align: center;
+        }
+        .member-socials {
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width:1024px) {
+        .feat-item {
+            width: calc(100%/2);
+        }
+        h1 {
+            font-size: 5em;
+        }
+        .banner-container p {
+            font-size: 1.6em;
+        }
+        .top-footer-container {
+            width: 100%;
+        }
+        .slide-content {
+            padding: 10px 2%;
+            ;
+        }
+        /*NAVIGATION*/
+        nav{display:none;
+        }
+
+    }
+    @media screen and (max-width:768px){
+      h1 {
+          font-size: 6.2vw;
+      }
+      .feat-item {
+          width: 100%;
+          padding:40px 15%;
+      }
+    .banner-container p{
+      width:90%;
+    }
+
+        .slide-content p {
+            line-height: 1.4;
+            font-size: 3.2em;
+        }
+
+        .team-member {
+            align-items: center;
+            width: 100%;
+            padding: 40px 6em;
+            text-align: center;
+        }
+
+
+
+      .info {
+          width: 100%;
+          padding:30px 15%;
+      }
+      h3 {
+
+          font-size: 2em;
+      }
+    }
