@@ -8,13 +8,14 @@
     <title>ActiveBox</title>
     <link rel="stylesheet" href="styles/mainstyles.css">
     <link rel="stylesheet" href="styles/rwd-styles.css">
-
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-
+    <!-- Adding slicker -->
+    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css" />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css"/>
 </head>
-
 <body>
     <section class="banner">
         <div class="banner-container">
@@ -32,7 +33,6 @@
                     </ul>
                 </nav>
             </header>
-
             <h1>YOUR FAVORITE ONE PAGE<br>MULTI PURPOSE TEMPLATE</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna<br>vel scelerisque nisl consectetur et.</p>
             <a href="#" class="btn">FIND OUT MORE</a>
@@ -71,9 +71,7 @@
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
             </div>
         </div>
-
     </section>
-
     <section id="works">
         <div class="projects-container">
             <a href="" class="project-item">
@@ -124,12 +122,8 @@
                 <h2>PROJECT NAME</h2>
                 <p>WEBSITE DESIGN</p>
             </a>
-
-
-
         </div>
     </section>
-
     <section id="our-team">
         <div class="team-members">
             <div class="team-member">
@@ -186,10 +180,22 @@
         </div>
     </section>
     <section id="testimontals">
-        <!-- ALL THOSE STUFFF -->
-
+        <div class="slicker-slider">
+            <div class="slide">
+                <div class="photo photo1"></div>
+                <div class="slide-content">
+                    <p>"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam..."</p>
+                    <cite>SUSAN SIMS, INTERACTION DESIGNER AT XYZ</cite>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="photo photo2"></div>
+                <div class="slide-content">
+                    <p>"Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur..."</p>
+                    <cite>SUSAN SIMS, INTERACTION DESIGNER AT XYZ</cite></div>
+            </div>
+        </div>
     </section>
-
     <section id="download">
         <div class="download-container">
             <h3>Are You Ready to Start? Download Now For Free!</h3>
@@ -197,9 +203,7 @@
             <a href="https://github.com/kamalcha/ActiveBox/archive/master.zip" class="btn-download">DOWNLOAD FOR FREE</a>
         </div>
     </section>
-
     <footer>
-
         <div class="top-footer-container">
             <div class="info">
                 <h5>LOCATION</h5>
@@ -219,8 +223,6 @@
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
             </div>
         </div>
-
-
         <div class="bottom-footer">
             <p>Copyright &copy; 2015 ActiveBox. All Rights Reserved</p>
             <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#">Kamal Chaneman</a></p>
@@ -229,6 +231,22 @@
 
 
     <!-- SCRIPTS! -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slicker-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                infinite: true,
+                speed: 700,
+                fade: true,
+                cssEase: 'ease-in'
+            });
+        });
+    </script>
     <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 </body>
 
