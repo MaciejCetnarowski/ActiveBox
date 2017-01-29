@@ -434,6 +434,9 @@ h3 {
     color: #777;
     font-size: 3em;
 }
+h3>br{
+  display:none;
+}
 
 .download-container p {
     color: #333;
