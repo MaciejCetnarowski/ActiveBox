@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- Adding slicker -->
     <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css" />
-    <!-- // Add the new slick-theme.css if you want the default styling -->
-    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css" />
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="styles/magnific-popup.css">
+
 </head>
+
 <body>
     <section class="banner">
         <div class="banner-container">
@@ -74,49 +77,49 @@
     </section>
     <section id="works">
         <div class="projects-container">
-            <a href="" class="project-item">
+            <a href="img/project1.png" class="project-item image-popup-vertical-fit">
                 <div class="img img1"></div>
                 <div class="shadow"></div>
                 <h2>PROJECT NAME</h2>
                 <p>WEBSITE DESIGN</p>
             </a>
-            <a href="" class="project-item">
+            <a href="img/project2.png" class="project-item image-popup-vertical-fit">
                 <div class="img img2"></div>
                 <div class="shadow"></div>
                 <h2>PROJECT NAME</h2>
                 <p>WEBSITE DESIGN</p>
             </a>
-            <a href="" class="project-item">
+            <a href="img/project3.png" class="project-item image-popup-vertical-fit">
                 <div class="img img3"></div>
                 <div class="shadow"></div>
                 <h2>PROJECT NAME</h2>
                 <p>WEBSITE DESIGN</p>
             </a>
-            <a href="" class="project-item">
+            <a href="img/project4.png" class="project-item image-popup-vertical-fit">
                 <div class="img img4"></div>
                 <div class="shadow"></div>
                 <h2>PROJECT NAME</h2>
                 <p>WEBSITE DESIGN</p>
             </a>
-            <a href="" class="project-item">
+            <a href="img/project5.png" class="project-item image-popup-vertical-fit">
                 <div class="img img5"></div>
                 <div class="shadow"></div>
                 <h2>PROJECT NAME</h2>
                 <p>WEBSITE DESIGN</p>
             </a>
-            <a href="" class="project-item">
+            <a href="img/project6-fit" class="project-item image-popup-vertical-fit">
                 <div class="img img6"></div>
                 <div class="shadow"></div>
                 <h2>PROJECT NAME</h2>
                 <p>WEBSITE DESIGN</p>
             </a>
-            <a href="" class="project-item">
+            <a href="img/project7.png" class="project-item image-popup-vertical-fit">
                 <div class="img img7"></div>
                 <div class="shadow"></div>
                 <h2>PROJECT NAME</h2>
                 <p>WEBSITE DESIGN</p>
             </a>
-            <a href="" class="project-item">
+            <a href="img/project8.png" class="project-item image-popup-vertical-fit">
                 <div class="img img8"></div>
                 <div class="shadow"></div>
                 <h2>PROJECT NAME</h2>
@@ -234,19 +237,10 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.slicker-slider').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                infinite: true,
-                speed: 700,
-                fade: true,
-                cssEase: 'ease-in'
-            });
-        });
-    </script>
+    <script src="functions/slicker.js"></script>
+    <script src="functions/jquery.magnific-popup.js"></script>
+    <script src="functions/magnific-init.js"></script>
+    <script src="functions/myFunctions.js"></script>
     <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 </body>
 
