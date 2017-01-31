@@ -57,9 +57,24 @@
         nav {
             display: none;
         }
+        .mb-popup-button {
+            display: block;
+        }
     }
 
     @media screen and (max-width:768px) {
+        header.fixed {
+            padding: 10px;
+        }
+        .popup-menu.popup ul li {
+            font-size: 5.5vh;
+        }
+        .popup-menu ul li a {
+            padding: 10px 0;
+        }
+        .popup-menu ul {
+            padding: 10px 30px;
+        }
         h1 {
             font-size: 6.2vw;
         }
@@ -113,14 +128,14 @@
             background: url("../img/photo2.jpg") no-repeat 70% 0;
             background-size: cover;
         }
-        h3{
-          text-align: center;
+        h3 {
+            text-align: center;
         }
-        h3>br{
-          display:block;
+        h3>br {
+            display: block;
         }
-        .download-container p{
-          width:80%;
-          text-align: center;
+        .download-container p {
+            width: 80%;
+            text-align: center;
         }
     }

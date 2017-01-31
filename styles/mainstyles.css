@@ -31,7 +31,7 @@ a:link, a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
 .banner .banner-container {
     display: flex;
@@ -50,16 +50,16 @@ header {
     align-items: center;
     padding: 4em 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    transition:all 1s;
+    transition: all 1s;
 }
-header.fixed{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:rgba(41,45,72,0.95);
-  padding:2em 10em;
-  z-index:999;
 
+header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(41, 45, 72, 0.95);
+    padding: 2em 10em;
+    z-index: 999;
 }
 
 nav {
@@ -84,6 +84,133 @@ nav ul li {
 
 nav ul li:hover {
     color: rgba(255, 255, 255, 1);
+}
+
+.popup-menu {
+    display: none;
+    animation: popup .4s 1 alternate ease-in;
+}
+
+.popup-menu.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background:rgba(0,0,0,0.9);*/
+    z-index: 99;
+    animation: popup .4s 1 forwards ease-in;
+}
+
+@keyframes popup {
+    0% {
+        background: rgba(0, 0, 0, 0);
+    }
+    10% {
+        background: rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        background: rgba(0, 0, 0, 0.95);
+    }
+}
+
+.popup-menu ul {
+    list-style-type: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    animation: shakyLoad .4s 1 forwards;
+    transform-origin: 100% 0;
+    animation-timing-function: cubic-bezier(.49, .35, .52, 1.8);
+}
+
+@keyframes shakyLoad {
+    0% {
+        transform: rotate(15deg)
+    }
+}
+
+.popup-menu ul li {
+    transition: all 0.2s;
+}
+
+.popup-menu ul li:hover {
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.popup-menu .cross {
+    position: absolute;
+    right: -20px;
+    top: -25px;
+    cursor: pointer;
+    transition: all 0.2s;
+    line-height: 0;
+    margin: 0;
+}
+
+.popup-menu .cross:hover {
+    transform: rotate(45deg);
+}
+
+.popup-menu ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.mb-popup-button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: none;
+}
+
+.mb-popup-button span {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.2s;
+    /*   box-shadow:1px 2px 1px rgba(0,0,0,0.2) */
+}
+
+.mb-popup-button span:nth-child(1) {
+    left: 0;
+    top: 0;
+}
+
+.mb-popup-button span:nth-child(2) {
+    top: 15px;
+    left: 0;
+}
+
+.mb-popup-button span:nth-child(3) {
+    top: 30px;
+    left: 0;
+}
+
+.mb-popup-button:hover span:nth-child(1) {
+    top: 0px;
+    left: -10px;
+}
+
+.mb-popup-button:hover span:nth-child(2) {
+    top: 15px;
+    left: 10px;
+}
+
+.mb-popup-button:hover span:nth-child(3) {
+    top: 30px;
+    left: -10px;
 }
 
 h1 {
@@ -178,9 +305,10 @@ h2 {
     height: 350px;
     overflow: hidden;
 }
-.projects-container a{
-  opacity:0;
-  transition:opacity 1s;
+
+.projects-container a {
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .img {
@@ -448,8 +576,9 @@ h3 {
     color: #777;
     font-size: 3em;
 }
-h3>br{
-  display:none;
+
+h3>br {
+    display: none;
 }
 
 .download-container p {
@@ -468,30 +597,32 @@ h3>br{
     font-weight: 700;
     transition: all .1s
 }
-.btn-download.animate{
-  animation: shake 0.4s 2 ease-in-out;
+
+.btn-download.animate {
+    animation: shake 0.4s 2 ease-in-out;
 }
-@keyframes shake{
-  0%{
-    transform:rotate(0);
-  }
-  25%{
-    transform:rotate(-5deg);
-  }
-  50%{
-    transform:rotate(5deg);
-  }
-  75%{
-    transform:rotate(-5deg);
-  }
-  100%{
-    transform:rotate(0);
-  }
+
+@keyframes shake {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
 
 .btn-download:hover {
     background: #E84545;
-      animation: shake 0.4s infinite ease-in-out;
+    animation: shake 0.4s infinite ease-in-out;
 }
 
 footer {
